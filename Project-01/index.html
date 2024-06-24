@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment Form</title>
-    <link rel="stylesheet" href="style.css"
-   
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
 </head>
 <body>
+
     <div class="form-container">
         <h1>Book Your Appointment</h1>
         <form>
             <div class="form-group">
                 <label for="appointment-date">Appointment Date</label>
-                <input type="date" id="appointment-date" name="appointment-date" value="2024-06-20" required>
+                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 800;" type="date" class="form-control" id="inputCalendar" placeholder="&#xf073;" required>
+                <!-- <input type="date" id="appointment-date" name="appointment-date" value="2024-06-20" required> -->
             </div>
             <div class="form-group">
                 <label for="contact-number">Contact Number</label>
-                <input type="tel" id="contact-number" name="contact-number" placeholder="01X XX XXXXXX" required>
-            </div>
+                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 900;" type="tel" class="form-control" id="inputPhone" placeholder="&#xf879;  01X XX XXXXXX" required>
+        </div>
+                <!-- <input type="tel" id="contact-number" name="contact-number" placeholder="01X XX XXXXXX" required> -->
+            
             <div class="form-group">
                 <label for="email">Email (Optional)</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com">
+                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="email" class="form-control" id="inputEmail4" placeholder=" &#xf0e0;  Email" required>
             </div>
             <div class="form-group">
                 <label for="patient-name">Patient Name</label>
-                <input type="text" id="patient-name" name="patient-name" placeholder="Full Name" required>
+                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" class="form-control" id="inputEmail5" placeholder=" &#xf007;  Name" required>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="column">
                 <label for="patient-age">Patient Age</label>
-                <input type="number" id="patient-age" name="patient-age" placeholder="Age" required>
+                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" class="form-control" id="inputPen" placeholder="&#xf304;  Age" required>
+                <!-- <input type="number" id="patient-age" name="patient-age" placeholder="Age" required> -->
             </div>
-            <div class="form-group">
+            <div class="form-group" id="column">
                 <label for="patient-gender">Patient Gender</label>
                 <select id="patient-gender" name="patient-gender" required>
                     <option value="">Select gender</option>
@@ -40,10 +47,10 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="Condition">
                 <label for="patient-type">Patient Condition</label>
-                <textarea id="patient-type" name="patient-type" rows="5" cols="72" placeholder="Type" required ></textarea>
-                <!-- <input type="text" id="patient-type" name="patient-type" placeholder="Type" required> -->
+                <textarea id="patient-type" name="patient-type"  placeholder="Type" resize="none"  required ></textarea>
+                <!-- <input class="patient-condition" type="text" id="patient-type" name="patient-type" placeholder="Type" required> -->
             </div>
             <div class="form-group">
                 <input type="submit" value="BOOK NOW">
