@@ -9,13 +9,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 50px;
 }
 .form-container {
     background-color:#F2F4F4 ;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 550px;
+    width: 500px;
 }
 .form-container h1 {
     margin-top: 5px;
@@ -56,15 +57,16 @@ body {
     border-radius: 10px;
 }
 
-.patient-condition{
-    height: 75px;
-}
 
-#Condition{
-    height: 85px;
-    width:550px;
+
+textarea {
+    resize: none;
+    height: 100px;
+    width: 495px;
 }
 
 #column{
-    display:flexbox;
+    float: left;
+    padding: 3cqb;
 }
+
